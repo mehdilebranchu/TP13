@@ -6,9 +6,9 @@ class node:
     def getVal(self):
         return self.__val
     def getRight(self):
-        return self.__right.getVal()
+        return self.__right
     def getLeft(self):
-        return self.__left.getVal()
+        return self.__left
     def setRight(self,a):
         self.__right = a
     def setLeft(self,a):

@@ -9,6 +9,12 @@ class binaryTree:
             return True
         else :
             return False
+    def size(self,node):
+        n = 1
+        if node.getRight() == None :
+            return n - 1
+        b = binaryTree(node.getRight())
+        return n + b.size(node.getRight())
 
 
 if __name__ == '__main__':
@@ -23,4 +29,5 @@ if __name__ == '__main__':
     n1 = node(12, n3, n2)
     b1 = binaryTree(n1)
     print(b1.isRoot(n2))
+    print(b1.size(n1))
 
