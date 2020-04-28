@@ -13,6 +13,8 @@ class node:
         self.__right = a
     def setLeft(self,a):
         self.__left = a
+    def printNode(self):
+        print(self.__val)
 
 
 if __name__ == '__main__':
